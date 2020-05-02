@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>username validation</title>
+<script>
+   function validate()
+   {
+      var text= document.getElementById("username").value;
+      var regx= /^([a-zA-Z0-9 ]{6,20})( ([a-zA-Z0-9]{2,15}))?$/;
+      
+      if(regx.test(text))
+         {
+              alert("valid username");		
+   		}		 
+		else
+		{
+            alert("invalid username");
+		}
+   }
+</script>
+</head>
+<body>
+<p>Enter the username</p>
+<form>
+<input type="text" placeholder="username" id="username">
+<button type="submit" onclick="validate()" id="btn">click me</button>
+<p>Note: username should atleast contain 6 characters.</p>
+</form>
+</body>
+</html>

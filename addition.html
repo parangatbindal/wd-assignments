@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Addition of numbers</title>
+<script>
+   function add()
+   {
+      var x= parseint(document.getElementById("data1").value);
+	  var y= parseint(document.getElementById("data2").value);
+	  var sum= x+y;
+	  document.getElementById("res").innerHTML=sum;
+   }
+</script>
+</head>
+<body>
+<input type="text" placeholder="enter data" id="data1">
+<br>
+<input type="text" placeholder="enter data" id="data2">
+<br>
+<input type="button" onclick="add()" value="addition" id="btn">
+<div id="res"></div>
+</body>
+</html>
